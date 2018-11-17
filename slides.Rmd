@@ -95,7 +95,7 @@ options(htmltools.dir.version = FALSE)
 
 ---
 # [Yihui Xie (@xieyihui)](https://twitter.com/xieyihui)'s [Blog post](https://yihui.name/en/2018/09/notebook-war/)
-- I used [R markdown](https://rmarkdown.rstudio.com/) make these slides!
+- I used [R markdown](https://rmarkdown.rstudio.com/) to make these slides!
 - No problems with version control
 - [R notebooks](https://rmarkdown.rstudio.com/r_notebooks) are just another output format!
 ![](https://user-images.githubusercontent.com/163582/45173275-4fcc4800-b1cd-11e8-8f83-124ce7fac529.png)
