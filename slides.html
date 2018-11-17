@@ -13,6 +13,7 @@
 class: center, middle, inverse, title-slide
 
 # First Notebook War
+## PyData DC 2018
 ### Martin Skarzynski
 ### 2018-11-17
 
@@ -30,14 +31,13 @@ class: center, middle, inverse, title-slide
 - Website: https://marskar.github.io
 - Twitter: [@marskar](https://twitter.com/marskar)
 
-.center[![](https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg)]
+.center[&lt;img src='https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg' width='300px'&gt;&lt;/img&gt;]
 
 ---
-# About this talk
 
-- The title: inspired by [a tweet](https://twitter.com/pgbovine/status/1034626381735317504) by [Philip Guo (@pgbovine)](https://twitter.com/pgbovine)
+# Title inspired by [a tweet](https://twitter.com/pgbovine/status/1034626381735317504) by [Philip Guo](https://twitter.com/pgbovine)
 
-![tweet](1st-notebook-war-tweet.png)
+.center[&lt;img src='1st-notebook-war-tweet.png' width='500px'&gt;&lt;/img&gt;]
 
 ---
 # Previous conflicts
@@ -68,18 +68,14 @@ class: center, middle, inverse, title-slide
 - built on IPython by [Fernando Perez (@fperez)](https://twitter.com/fperez)
 - combine [Markdown](https://www.markdownguide.org/) text, code, and output
 - help data scientists communicate goals, methods, and results
-- used in
-    - [academia](https://www.oreilly.com/ideas/all-the-cool-kids-are-doing-it-maybe-we-should-too)
-    - [Amazon](https://www.oreilly.com/ideas/machine-learning-and-ai-technologies-and-platforms-at-aws)
-    - [Netflix](https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6)
-    - [PayPal](https://medium.com/paypal-engineering/paypal-notebooks-powered-by-jupyter-fd0067bd00b0)
+- used in [academia](https://www.oreilly.com/ideas/all-the-cool-kids-are-doing-it-maybe-we-should-too), [Amazon](https://www.oreilly.com/ideas/machine-learning-and-ai-technologies-and-platforms-at-aws),  [Netflix](https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6), and [PayPal](https://medium.com/paypal-engineering/paypal-notebooks-powered-by-jupyter-fd0067bd00b0)
 
 .center[&lt;img src='https://cdn-images-1.medium.com/max/2000/0*QLer52L9p-T72bGW' width='500px'&gt;&lt;/img&gt;]
 
 ---
 # Joel doesn't like notebooks
 
-- ["I Don't Like Notebooks" by Joel Grus at Jupytercon 2018](https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/detail/68282)
+- ["I Don't Like Notebooks"](https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/detail/68282) by [Joel Grus (@joelgrus)](https://twitter.com/joelgrus) at Jupytercon 2018
 - [Slides](https://t.co/30peBFwTbv)
 - [Video](https://youtu.be/7jiPeIFXb6U)
 - Modularity and Reusability
@@ -97,22 +93,19 @@ class: center, middle, inverse, title-slide
 ![](brevity-burn.png)
 
 ---
-# DataFramed podcast
-- Podcast by Hugo Bowne Andersen
+# DataFramed
+- [Podcast](https://www.datacamp.com/community/podcast) by [Hugo Bowne-Anderson (@hugobowne)](https://twitter.com/hugobowne)
+- [Episode 44](https://soundcloud.com/dataframed/project-jupyter-interactive-computing) with [Brian Granger (@ellisonbg)](https://twitter.com/ellisonbg)
+- [JupyterLab](https://soundcloud.com/dataframed/project-jupyter-interactive-computing)
+![](https://pbs.twimg.com/media/DpUHwwXW4AAGpfU.jpg)
 
 ---
-# JupyterLab
-- text editor and REPL
-
----
-# Yihui
-
-- [Blog post](https://yihui.name/en/2018/09/notebook-war/)
+# [Yihui Xie (@xieyihui)](https://twitter.com/xieyihui)'s [Blog post](https://yihui.name/en/2018/09/notebook-war/)
 - [R notebooks](https://rmarkdown.rstudio.com/r_notebooks)
 - these slides are made with R markdown!
+![](https://i.vimeocdn.com/video/474129126_1280x720.jpg)
 
 ---
-@xieyihui
 
 # Why use notebooks
 
@@ -120,19 +113,19 @@ class: center, middle, inverse, title-slide
 - Rendered by GitHub and nbviewer
 - Google [colab](https://colab.research.google.com/)
 - [Kaggle kernels](https://towardsdatascience.com/introduction-to-kaggle-kernels-2ad754ebf77)
-- [Binder]()
+- [Binder](https://mybinder.org/)
 
-@jakevplas
+![](https://user-images.githubusercontent.com/1510968/34175153-b8a79162-e4fb-11e7-81fe-c4794bc53442.png)
 
 ---
 # Notebook tools
 
 1. version control tool for notebooks - [nbdime]()
 2. work with Jupyter notebooks, R markdown, and Julia, Python, and R scripts using [JupyText](https://github.com/mwouts/jupytext)
-3. configure Jupyter Notebooks to run on markdown files with [notedown](https://github.com/aaren/notedown)
-4. create and run Jupyter and R notebooks from scripts and markdown files with [nbless](https://github.com/marskar/nbless)
+3. configure Jupyter Notebooks to run on markdown (md) files with [notedown](https://github.com/aaren/notedown)
+4. create and run Jupyter notebooks from scripts and md files with [nbless](https://github.com/marskar/nbless)
 
-@mwouts 
+![](https://gist.githubusercontent.com/mwouts/13de42d8bb514e4acf6481c580feffd0/raw/b8dd28f44678f8c91f262da2381276fc4d03b00a/JupyterPyCharm.gif)
 
 ---
 # Write modules!
@@ -144,10 +137,14 @@ class: center, middle, inverse, title-slide
 - Definitions
     - Classes
     - Functions
-- Type Hints (Steven Lott's tutorial yesterday)
-- Docstrings (with examples)
+- [Type Hints](https://docs.python.org/3/library/typing.html) (for more check out Steven Lott's PyData DC tutorial)
+- [Docstrings](https://www.datacamp.com/community/tutorials/docstrings-python) (with examples!)
 - `if __name__ == '__main__':`
 - Function call(s), e.g. `doctest.testmod(verbose=True)`
+- [doctest](https://docs.python.org/3/library/doctest.html) -&gt; test suite (with [`unittest` API](https://docs.python.org/3/library/doctest.html#unittest-api))
+- run test suite with [`unittest`](https://docs.python.org/3/library/unittest.html) or [`pytest`](https://docs.pytest.org/en/latest/)
+- use [cookiecutter](https://github.com/audreyr/cookiecutter#cookiecutter) for project structure
+- [deploy projects/packages to PyPI](https://packaging.python.org/tutorials/packaging-projects/)
 
 ---
 # Thanks for listening!
