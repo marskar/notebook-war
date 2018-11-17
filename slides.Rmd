@@ -95,8 +95,8 @@ options(htmltools.dir.version = FALSE)
 
 ---
 # [Yihui Xie (@xieyihui)](https://twitter.com/xieyihui)'s [Blog post](https://yihui.name/en/2018/09/notebook-war/)
-- [R notebooks](https://rmarkdown.rstudio.com/r_notebooks)
-- these slides are made with R markdown!
+- These slides are made with [R markdown](https://rmarkdown.rstudio.com/)!
+- [R notebooks](https://rmarkdown.rstudio.com/r_notebooks) are just another output format
 ![](https://i.vimeocdn.com/video/474129126_1280x720.jpg)
 
 ---
