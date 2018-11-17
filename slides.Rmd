@@ -143,5 +143,3 @@ options(htmltools.dir.version = FALSE)
 
 ---
 # Thanks for listening!
-
----
