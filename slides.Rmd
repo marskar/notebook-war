@@ -78,17 +78,17 @@ options(htmltools.dir.version = FALSE)
 - [Video](https://youtu.be/7jiPeIFXb6U)
 - Modularity and Reusability
 
-![Lego GIF]()
+![](joel-grus-jupytercon.png)
 
 ---
-# Joel also doesn't like the down arrow in slides
+# Joel also doesn't like vertical slides
 
-![The scream]()
+![](vertical-slides.png)
 
 ---
 # Tim likes notebooks
 
-![Brevity Burn]()
+![](brevity-burn.png)
 
 ---
 # DataFramed podcast
