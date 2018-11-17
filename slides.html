@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First Notebook War</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Martin Skarzynski" />
+    <meta name="date" content="2018-11-17" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# First Notebook War
+### Martin Skarzynski
+### 2018-11-17
+
+---
+
+
+
+
+# About me
+
+- Cancer Prevention Fellow 
+  - at National Cancer Institute
+- Co-Chair, Bioinformatics &amp; Data Science
+  - at Foundation for Advanced Education in the Sciences
+- Website: https://marskar.github.io
+- Twitter: [@marskar](https://twitter.com/marskar)
+
+.center[![](https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg)]
+
+---
+# About this talk
+
+- The title: inspired by [a tweet](https://twitter.com/pgbovine/status/1034626381735317504) by [Philip Guo (@pgbovine)](https://twitter.com/pgbovine)
+
+![tweet](1st-notebook-war-tweet.png)
+
+---
+# Previous conflicts
+
+- Spaces versus Tabs
+- Emacs versus Vim
+
+![Silicon Valley GIF](silicon_valley_spaces_over_tabs_vim_over_emacs_by_digi_matrix-da824de.gif) 
+
+- Source: https://goo.gl/images/U2KpcG
+
+---
+# Spaces versus Tabs
+
+- Code editor setup: Tab = 4 spaces
+- [GNU Make](https://www.gnu.org/software/make/) requires tabs!
+- Use spaces, get paid more!
+  - according to [blog post](https://stackoverflow.blog/2017/06/15/developers-use-spaces-make-money-use-tabs/) by [David Robinson (@drob)'s](https://twitter.com/drob)
+
+.center[&lt;img src='https://zgab33vy595fw5zq-zippykid.netdna-ssl.com/wp-content/uploads/2017/06/salary_graph-1-1400x1000.png}' width='500px'&gt;&lt;/img&gt;]
+
+
+---
+# Notebooks
+
+[Jupyter notebooks](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html)
+- are data science tools
+- built on IPython by [Fernando Perez (@fperez)](https://twitter.com/fperez)
+- combine [Markdown](https://www.markdownguide.org/) text, code, and output
+- help data scientists communicate goals, methods, and results
+- used in
+    - [academia](https://www.oreilly.com/ideas/all-the-cool-kids-are-doing-it-maybe-we-should-too)
+    - [Amazon](https://www.oreilly.com/ideas/machine-learning-and-ai-technologies-and-platforms-at-aws)
+    - [Netflix](https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6)
+    - [PayPal](https://medium.com/paypal-engineering/paypal-notebooks-powered-by-jupyter-fd0067bd00b0)
+
+.center[&lt;img src='https://cdn-images-1.medium.com/max/2000/0*QLer52L9p-T72bGW' width='500px'&gt;&lt;/img&gt;]
+
+---
+# Joel doesn't like notebooks
+
+- ["I Don't Like Notebooks" by Joel Grus at Jupytercon 2018](https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/detail/68282)
+- Modularity and Reusability
+
+![Lego GIF]()
+
+---
+# Joel also doesn't like the down arrow in slides
+
+![The scream]()
+
+---
+# Tim likes notebooks
+
+![Brevity Burn]()
+
+---
+# DataFramed podcast
+- Podcast by Hugo Bowne Andersen
+
+---
+# JupyterLab
+- text editor and REPL
+
+---
+# Yihui
+
+- [Blog post](https://yihui.name/en/2018/09/notebook-war/)
+- [R notebooks](https://rmarkdown.rstudio.com/r_notebooks)
+- these slides are made with R markdown!
+
+---
+@xieyihui
+
+# Why use notebooks
+
+- [Literate programming](http://www.literateprogramming.com/)
+- Rendered by GitHub and nbviewer
+- Google [colab](https://colab.research.google.com/)
+- [Kaggle kernels](https://towardsdatascience.com/introduction-to-kaggle-kernels-2ad754ebf77)
+- [Binder]()
+
+@jakevplas
+
+---
+# Notebook tools
+
+1. version control tool for notebooks - [nbdime]()
+2. work with Jupyter notebooks, R markdown, and Julia, Python, and R scripts using [JupyText](https://github.com/mwouts/jupytext)
+3. configure Jupyter Notebooks to run on markdown files with [notedown](https://github.com/aaren/notedown)
+4. create and run Jupyter and R notebooks from scripts and markdown files with [nbless](https://github.com/marskar/nbless)
+
+@mwouts 
+
+---
+# Write modules!
+
+- Imports
+    1. Standard Library
+    2. Third Party
+    3. User Defined
+- Definitions
+    - Classes
+    - Functions
+- Type Hints (Steven Lott's tutorial yesterday)
+- Docstrings (with examples)
+- `if __name__ == '__main__':`
+- Function call(s), e.g. `doctest.testmod(verbose=True)`
+
+---
+# Thanks for listening!
+
+---
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
